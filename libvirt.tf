@@ -61,4 +61,3 @@ resource "libvirt_domain" "xenial" {
   output "ip" {
     value = "${libvirt_domain.xenial.network_interface.0.addresses.0}"
  }
-
